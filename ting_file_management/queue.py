@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class Queue:
     def __init__(self):
         self._data = deque()
@@ -16,5 +17,5 @@ class Queue:
     def search(self, index):
         max_len = len(self._data)
         if index < 0 or index >= max_len:
-            raise IndexError('Index fora de alcance')
+            raise IndexError("Index fora de alcance")
         return self._data[index]
